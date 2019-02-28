@@ -3,7 +3,10 @@ pipeline{
   stages{
     stage('-clean-'){
       steps{
-        sh "mvn clean"
+        sh '''
+        cd code
+        mvn clean
+        '''
       }
     }
     stage('-test-'){
