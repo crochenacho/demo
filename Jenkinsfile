@@ -21,7 +21,7 @@ pipeline{
         sh '''
         cd code
         mvn compile
-        mvn deploy
+        mvn -X deploy
         '''
       }
     }
