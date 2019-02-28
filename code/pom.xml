@@ -40,9 +40,8 @@
 
   <distributionManagement>
     <repository>
-      <id>internal.repo</id>
-      <name>My nexus server</name>
-      <url>http://localhost:8081/repository/artifact-repo/</url>
+      <id>nexus-snapshots</id>
+      <url>http://localhost:8081/repository/artifact-repo</url>
     </repository>
   </distributionManagement>
 </project>
