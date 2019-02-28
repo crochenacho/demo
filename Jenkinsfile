@@ -19,6 +19,7 @@ pipeline{
     stage('-compile & deploy-'){
       steps{
         sh '''
+        cd code
         mvn compile
         mvn deploy
         '''
