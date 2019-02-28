@@ -8,13 +8,17 @@ pipeline{
     }
     stage('-test-'){
       steps{
-        sh ' echo "se pasan los test"
+        sh '''
+        echo "se pasan los test"
+        '''
       }
     }
     stage('-compile & deploy-'){
       steps{
-        sh "mvn compile"
-        sh "mvn deploy"
+        sh '''
+        mvn compile
+        mvn deploy
+        '''
       }
     }
   }
